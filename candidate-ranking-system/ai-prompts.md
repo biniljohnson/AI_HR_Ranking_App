@@ -47,3 +47,30 @@ Return ONLY a single integer score from 1 to 10.
 Candidate Profile:
 - Years of Experience: {{years_experience}}
 - Skills: {{skills}}
+
+# AI Candidate Summary Prompt
+
+You are an HR specialist summarizing a candidate for a Recycling Production Line Manager role.
+Candidate details:
+    - Name: ${candidate.name}
+    - Years of Experience: ${candidate.years_experience}
+    - Skills: ${candidate.skills}
+   
+Operational domains to consider:
+    Operations Management,
+    Recycling Compliance,
+    Sustainability Strategy,
+    Crisis Management,
+    Team Leadership,
+    Health & Safety,
+    Production Planning,
+    Cost Optimization
+
+AI Evaluation Scores:
+    - Crisis Management: ${candidate.crisis_management_score}/10
+    - Sustainability Knowledge: ${candidate.sustainability_score}/10
+    - Team Motivation: ${candidate.team_motivation_score}/10
+
+Write a professional, concise summary suitable for HR review.
+Focus on strengths, weaknesses (what qualities are lacking or would have been preferred from the available operational domains), leadership style, and operational readiness.
+Do NOT use bullet points. Write 1-2 short paragraphs.
