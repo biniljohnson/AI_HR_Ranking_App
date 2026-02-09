@@ -43,7 +43,7 @@ Tables:
 - `evaluations` – AI evaluation scores
 - `rankings` – auto-updated competitive rankings
 
-Schema and seed data are available in `/database`.
+Schema is availabla in [database](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/2cb4dde1d14fb07ea872d4cf78ee2f70f9f15213/candidate-ranking-system/database/schema.sql)
 
 ---
 
@@ -110,4 +110,5 @@ Rankings:
 ## AI Candidate Summary
 The “Share Candidate” button generates an AI-written HR summary using Groq.
 The summary uses only database fields and AI scores. The summaries can be copied for further use.
-The prompt is mentioned in the ai-prompts.md file
+The prompt is mentioned in [ai-prompts.md](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/2cb4dde1d14fb07ea872d4cf78ee2f70f9f15213/ai-prompts.md)
+
