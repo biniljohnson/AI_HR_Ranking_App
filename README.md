@@ -58,11 +58,11 @@ Has the ai-prompts and the screenshots of the app.
 ## Database Schema
 
 Tables (with links to sample data):
-- `candidates` [link]()  – basic candidate profiles
-- `evaluations` [link]() – AI evaluation scores
-- `rankings` [link]() – auto-updated competitive rankings
+- `candidates` – basic candidate profiles
+- `evaluations` – AI evaluation scores
+- `rankings` – auto-updated competitive rankings
 
-Schema is availabla in [database](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/2cb4dde1d14fb07ea872d4cf78ee2f70f9f15213/candidate-ranking-system/database/schema.sql)
+Schema and Sample data are availabla in [database](https://github.com/biniljohnson/AI_HR_Ranking_App/tree/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/database)
 
 ---
 
@@ -142,7 +142,7 @@ Candidates are evaluated on:
 
 Scores (1–10) are generated using AI prompts and stored in the database.
 
-The AI Prompts are present in [ai-prompts.md]()
+The AI Prompts are present in [ai-prompts.md](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/files/ai-prompts.md)
 
 Rankings:
 - Primary ranking is the total average AI score.
@@ -154,5 +154,6 @@ Rankings:
 ## AI Candidate Summary
 The “Share Candidate” button generates an AI-written HR summary using Groq.
 The summary uses only database fields and AI scores. The summaries can be copied for further use.
-The prompt is mentioned in [ai-prompts.md]()
+The prompt is mentioned in [ai-prompts.md](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/files/ai-prompts.md)
+
 
