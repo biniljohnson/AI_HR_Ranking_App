@@ -134,6 +134,14 @@ Frontend runs on http://localhost:5173
 
 ---
 
+## Candidate Generation and Evaluation
+
+Candidates are generated using Faker.js. The skills field includes a random set of skills from the following: 
+"Operations Management",  "Recycling Compliance", "Sustainability Strategy","Crisis Management","Team Leadership", "Health & Safety", "Production Planning", "Cost Optimization".
+They are evaluated using Groq AI Model and custom prompts.
+
+---
+
 ## AI Evaluation Logic
 Candidates are evaluated on:
 1. Crisis Management
@@ -155,6 +163,7 @@ Rankings:
 The “Share Candidate” button generates an AI-written HR summary using Groq.
 The summary uses only database fields and AI scores. The summaries can be copied for further use.
 The prompt is mentioned in [ai-prompts.md](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/files/ai-prompts.md)
+
 
 
 
