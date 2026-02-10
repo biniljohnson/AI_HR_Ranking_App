@@ -61,7 +61,7 @@ Tables (with links to sample data):
 - `evaluations` – AI evaluation scores
 - `rankings` – auto-updated competitive rankings
 
-Schema and Sample data are availabla in [database](https://github.com/biniljohnson/AI_HR_Ranking_App/tree/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/database)
+Schema and Sample data are available in [database](https://github.com/biniljohnson/AI_HR_Ranking_App/tree/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/database)
 
 ---
 
@@ -77,13 +77,14 @@ git clone <your-repo-url>
 cd candidate-ranking-system
 ```
 ### 2. Create a .env file in the following structure
+```env
 PORT=4000
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=yourpassword
 DB_NAME=candidate_ranking
 GROQ_API_KEY=your_groq_key
-
+```
 
 ### 3. Database Setup
 Open the database folder in terminal and then open mysql by entering
@@ -162,6 +163,7 @@ Rankings:
 The “Share Candidate” button generates an AI-written HR summary using Groq.
 The summary uses only database fields and AI scores. The summaries can be copied for further use.
 The prompt is mentioned in [ai-prompts.md](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/files/ai-prompts.md)
+
 
 
 
