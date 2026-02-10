@@ -14,7 +14,6 @@ It demonstrates database design, AI prompting, backend automation, and a functio
 - React + Vite dashboard
 - Sortable leaderboard and skill heatmap
 - AI-generated HR candidate summaries
-- Clean, interview-ready architecture
 
 ---
 
@@ -163,6 +162,7 @@ Rankings:
 The “Share Candidate” button generates an AI-written HR summary using Groq.
 The summary uses only database fields and AI scores. The summaries can be copied for further use.
 The prompt is mentioned in [ai-prompts.md](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/files/ai-prompts.md)
+
 
 
 
