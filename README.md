@@ -18,6 +18,25 @@ It demonstrates database design, AI prompting, backend automation, and a functio
 
 ---
 
+## File Directory
+
+**Backend**
+Has index.js which includes the sql queries for leaderboard, recalculating rankings and generating candidate summaries with AI.It also has ai_summary.js which includes the AI prompt and the call to the AI model for generating the AI summary of the candidate
+
+**Database**
+Has the CSV files of sample data from each table and the schema of the sql tables
+
+**Frontend**
+Has main.js, App.js and api.js (for the connections to the backend). It also includes components folder which has the CanidateCard, Leaderboard and SkillHeatmap files.
+
+**Generator**
+Has generateCandidate for using faker to generate sample candidates and evaluateCandidate for evaluating the generated candidates.
+
+**Files**
+Has the ai-prompts and the screenshots of the app.
+
+---
+
 ## Tech Stack
 
 **Frontend**
@@ -38,16 +57,19 @@ It demonstrates database design, AI prompting, backend automation, and a functio
 
 ## Database Schema
 
-Tables:
-- `candidates` – basic candidate profiles
-- `evaluations` – AI evaluation scores
-- `rankings` – auto-updated competitive rankings
+Tables (with links to sample data):
+- `candidates` [link]()  – basic candidate profiles
+- `evaluations` [link]() – AI evaluation scores
+- `rankings` [link]() – auto-updated competitive rankings
 
 Schema is availabla in [database](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/2cb4dde1d14fb07ea872d4cf78ee2f70f9f15213/candidate-ranking-system/database/schema.sql)
 
 ---
 
 ## Setup Instructions
+
+### Pre-requisite
+Make sure MySQL and node is downloaded on the device.
 
 ### 1. Clone Repository
 
@@ -65,12 +87,32 @@ GROQ_API_KEY=your_groq_key
 
 
 ### 3. Database Setup
+Open the database folder in terminal and then open mysql by entering
+```bash
+mysql -u root -p
+```
+Then enter your mysql password (when prompted).
+
 Run the below file in the mysql terminal for setting up the database table schemas.
 ```bash
-SOURCE database/schema.sql;
+SOURCE path/database/schema.sql;
 ```
 
-### 4. Backend Setup
+### 4. Generate and Evaluate Files
+Open the generator folder in a new terminal.
+Run
+```bash
+node generateCandidates.js
+```
+This will generate the sample candidates.
+
+Next, run 
+```bash
+node evaluateCandidate.js
+```
+
+### 5. Backend Setup
+In a new terminal
 ```bash
 cd backend
 npm install
@@ -81,8 +123,8 @@ node index.js
 ```
 Backend runs on http://localhost:4000
 
-### 5. Frontend Setup
-In a new terminal,
+### 6. Frontend Setup
+In a new terminal (with the backend still running),
 ```bash
 cd frontend
 npm install
@@ -100,6 +142,8 @@ Candidates are evaluated on:
 
 Scores (1–10) are generated using AI prompts and stored in the database.
 
+The AI Prompts are present in [ai-prompts.md]()
+
 Rankings:
 - Primary ranking is the total average AI score.
 - Tie-breaker: If the average scores are equal, then years of experience is considered a priority.
@@ -110,5 +154,5 @@ Rankings:
 ## AI Candidate Summary
 The “Share Candidate” button generates an AI-written HR summary using Groq.
 The summary uses only database fields and AI scores. The summaries can be copied for further use.
-The prompt is mentioned in [ai-prompts.md](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/2cb4dde1d14fb07ea872d4cf78ee2f70f9f15213/ai-prompts.md)
+The prompt is mentioned in [ai-prompts.md]()
 
