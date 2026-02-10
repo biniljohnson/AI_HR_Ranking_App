@@ -33,7 +33,7 @@ Has main.js, App.js and api.js (for the connections to the backend). It also inc
 Has generateCandidate for using faker to generate sample candidates and evaluateCandidate for evaluating the generated candidates.
 
 **Files**
-Has the ai-prompts and the screenshots of the app.
+Has the [ai-prompts](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/files/ai-prompts.md) and the [screenshots](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/bfa9b44e6bfac52704ada1342cbab82b07a186e5/candidate-ranking-system/files/Screenshots.pdf) of the app.
 
 ---
 
@@ -155,5 +155,6 @@ Rankings:
 The “Share Candidate” button generates an AI-written HR summary using Groq.
 The summary uses only database fields and AI scores. The summaries can be copied for further use.
 The prompt is mentioned in [ai-prompts.md](https://github.com/biniljohnson/AI_HR_Ranking_App/blob/e37f0110b906c432331273b5974c3e25545494b2/candidate-ranking-system/files/ai-prompts.md)
+
 
 
